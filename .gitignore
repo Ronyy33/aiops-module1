@@ -1,0 +1,10 @@
+.venv/
+mlruns/
+mlflow.db
+__pycache__/
+*.pyc
+data/data/
+data/new-labels/
+data/*.zip
+data/file_index.csv
+.dvc/config.local
