@@ -8,3 +8,4 @@ data/new-labels/
 data/*.zip
 data/file_index.csv
 .dvc/config.local
+data/raw/

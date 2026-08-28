@@ -1,0 +1,5 @@
+[core]
+    remote = ssh_remote
+['remote "ssh_remote"']
+    url = ssh://rohan@192.168.64.1/Users/rohan/dvcstore
+    user = rohan
