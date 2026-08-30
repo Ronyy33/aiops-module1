@@ -16,7 +16,9 @@ Reproducible MLflow experiment tracking on MNIST and DVC data versioning with ro
 | `requirements.txt` | pinned dependencies |
 | `.dvc/config` | DVC remote configuration (credentials live in the gitignored `config.local`) |
 | `environment.yml` | conda/mamba environment spec (for the Q4 reproducibility protocol) |
-| `report.pdf` | the written answers for Q1–Q4 |
+| `Report folder` | the written answers for Q1–Q4  and proofs of the assignment|
+Figures foler : contains al imp figures stated by question number.
+ONE Page: one page writeup for the assignment
 
 Git tags mark the two dataset versions: **`v1.0`** (1800 rows) and **`v2.0`** (2800 rows).
 
