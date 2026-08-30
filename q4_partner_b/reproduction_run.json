@@ -1,0 +1,18 @@
+{
+  "run_id": "a6dca368d92343fc87a2310f16a5fb6e",
+  "params": {
+    "n_estimators": "10",
+    "max_depth": "5",
+    "seed": "42"
+  },
+  "metrics": {
+    "accuracy": 0.809,
+    "f1_macro": 0.8041909628767062
+  },
+  "tags": {
+    "reproduction_note": "Partner B reproduction. Metric MATCHED within a stated tolerance of 0.01 absolute. Partner A reported accuracy ~0.81 / f1_macro ~0.80; this rerun gave accuracy 0.809000 / f1_macro 0.804191 with identical params (n_estimators=10, max_depth=5, seed=42). Dataset verified byte-identical via md5 7396020f8c1ab9425f2814ad058fa8d0 (109640201 bytes). Two deviations from the prescribed protocol were required: (1) dvc pull initially failed [Errno 101] Network is unreachable because the remote pointed at a VirtualBox NAT address (10.0.2.15 / stale 10.45.13.185); resolved after Partner A switched to bridged networking and re-pushed the config, plus a local 'dvc remote modify --local ssh-remote user vboxuser' override. (2) No environment.yml exists in the repository, so mamba env create could not be run; the environment was reconstructed from q4/python_env.yaml. Also noted: the run carries no git_commit tag, and --seed has no default in train.py, so omitting it makes train_test_split non-deterministic.",
+    "reproduced_by": "Partner B - Rohan",
+    "tolerance": "0.01 absolute on accuracy",
+    "metric_match": "PASS"
+  }
+}
